@@ -4,6 +4,10 @@ import Link from "next/link";
 function RecipePage({ recipe }) {
   const ID = parseInt(recipe.id);
   const chosenRecipe = recipes.find((r) => r.id === ID);
+
+  if (!chosenRecipe) {
+    return <div>Recipe not found!</div>;
+  }
   return (
     <>
       <meta charSet="UTF-8" />
