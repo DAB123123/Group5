@@ -13,7 +13,7 @@ export default function RecipeHome({ recipe }) {
           <div className="recipe-card1">
             <p className="protein-type-label">{recipe.type}</p>
             <p className="recipe-title-style">{recipe.name}</p>
-            <Link href={`/${recipe.id}`}>
+            <Link href={`/recipe/${recipe.id}`}>
               <button className="recipe-button">view recipe</button>
             </Link>
             <p className="recipe-info">
